@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+.wrap {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+#bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+#logo {
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+.wrap .langWrap {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrap #wpInsta {
+    position: absolute;
+    top: 27%;
+    left: 74%;
+}
+.wrap #wpInsta a img {
+    width: 25px;
+    height: 25px;
+}
+.wrap #wpInsta a:last-child img {
+    width: 35px;
+    margin: 0 0 0 5px;
+}
+.wrap .langWrap a {
+    text-decoration: none;
+    margin: 0 6px;
+}
+.wrap .langWrap a {
+    text-underline-offset: 3px;
+    color: #000;
+}
+.wrap ul {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    width: 70%;
+    height: 300px;
+    overflow: scroll;
+}
+.wrap ul li {
+    margin: 10px 0 0 0;
+    display: flex;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #a02e43;
+    flex-direction: column;
+}
+.wrap ul li span {
+    font-size: 0.9em;
+    font-family: Arial;
+    padding: 10px 5px;
+    text-align: center;
+}
+.wrap ul li span:last-child {
+    border-right: 0;
+}
+.wrap ul li .price {
+    color: #ff9104;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.wrap .nameDescrPrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .img {
+    width: 100%;
+    height: 250px;
+    display: none;
+}
+.wrap .img img {
+    min-width: 100%;
+    height: 250px;
+}
+.swiper-slide img {
+    width: 100% !important;
+}
+
+@media (min-width: 360px) {
+    #logo {
+        width: 160px;
+        top: 27%;
+    }
+    .wrap .langWrap {
+        top: 37%;
+    }
+    .wrap ul li {
+        margin: 15px 0 0 0;
+    }
+}
+
+@media (min-width: 412px) {
+    #logo {
+        width: 170px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrap { 
+        width: 600px;
+    }
+    .services {
+        max-height: 55vh;
+        margin: 15% 0 0 0;
+    }
+    .wrap ul {
+        width: 300px;
+    }
+    #bg {
+        width: 600px;
+    }
+    .wrap #wpInsta {
+        left: 58%;
+    }
+}
